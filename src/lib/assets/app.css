@@ -1,0 +1,105 @@
+body {
+	background-color: #333;
+}
+
+@font-face {
+	font-family: 'Monument';
+	font-weight: normal;
+	src: url('/Fonts/Monument/MonumentExtended-Regular.otf');
+}
+@font-face {
+	font-family: 'MonumentBold';
+	src: url('/Fonts/Monument/MonumentExtended-Ultrabold.otf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Homenaje';
+	src: url('/Fonts/Homenaje/Homenaje-Regular.ttf');
+	font-weight: 900;
+}
+@font-face {
+	font-family: 'ButterCup';
+	src: url('/Fonts/ButterCup/Butter Cup.otf');
+}
+@font-face {
+	font-family: 'Holtwood';
+	src: url('/Fonts/Holtwood/HoltwoodOneSC-Regular.ttf');
+}
+
+* {
+	font-family: 'Homenaje';
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+
+	border: none;
+	outline: none;
+}
+
+h1 {
+	font-family: 'MonumentBold';
+}
+h3,
+h2 {
+	font-family: 'Holtwood';
+}
+
+span {
+	font-family: 'ButterCup';
+}
+
+.smallP {
+	font-size: 0.7em;
+	opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* Desclaimer */
+
+.brGuContent {
+	position: relative;
+}
+.OnlyMobile {
+	display: none;
+}
+.LetsGo {
+	padding: 5px 10px;
+	border-radius: 4px;
+	margin-top: 10px;
+	color: black;
+}
+.desclaimerH3 {
+	font-size: 01rem;
+	margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+	.OnlyMobile {
+		display: block;
+		position: absolute;
+		background-color: black;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		width: calc(100% - 22px);
+		margin: 10px 0;
+		padding: 10px;
+		border-radius: 10px;
+
+		text-align: center;
+		z-index: 100;
+		border: 1px solid green;
+	}
+}
+
+/* Desclaimer End */
