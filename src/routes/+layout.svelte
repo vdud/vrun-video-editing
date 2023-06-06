@@ -33,9 +33,6 @@
 			return;
 		}
 
-		name = '';
-		email = '';
-		message = '';
 		const res = await fetch('/api/sendaMessage', {
 			method: 'POST',
 			headers: {
@@ -47,6 +44,10 @@
 				message
 			})
 		});
+
+		name = '';
+		email = '';
+		message = '';
 		const response = await res.json();
 		if (response.success) {
 			alert('Email sent!');
