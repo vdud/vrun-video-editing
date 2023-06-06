@@ -32,6 +32,10 @@
 			alert('Please enter a valid email');
 			return;
 		}
+
+		name = '';
+		email = '';
+		message = '';
 		const res = await fetch('/api/sendaMessage', {
 			method: 'POST',
 			headers: {
@@ -46,9 +50,6 @@
 		const response = await res.json();
 		if (response.success) {
 			alert('Email sent!');
-			name = '';
-			email = '';
-			message = '';
 		}
 	};
 
